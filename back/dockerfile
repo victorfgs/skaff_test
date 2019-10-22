@@ -1,0 +1,9 @@
+FROM node:current-alpine as builder
+COPY package*.json ./
+EXPOSE 80
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "start"]
+

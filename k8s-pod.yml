@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: full
+  labels:
+    app: full
+spec:
+  containers:
+    - name: myback
+      image: back
+      ports:
+        - containerPort: 80

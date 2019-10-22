@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1beta16
+kind: Config
+build:
+  artifacts:
+    - image: back
+      context: ./back
+deploy:
+  kubectl:
+    manifests:
+      - k8s-*
