@@ -4,6 +4,8 @@ build:
   artifacts:
     - image: back
       context: ./back
+    - image: front
+      context: ./front
 deploy:
   kubectl:
     manifests:

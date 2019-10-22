@@ -9,4 +9,8 @@ spec:
     - name: myback
       image: back
       ports:
+        - containerPort: 3000
+    - name: front
+      image: front
+      ports:
         - containerPort: 80

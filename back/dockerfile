@@ -1,6 +1,6 @@
 FROM node:current-alpine as builder
 COPY package*.json ./
-EXPOSE 80
+EXPOSE 3000
 RUN npm install
 
 COPY . .
