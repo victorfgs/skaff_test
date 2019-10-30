@@ -14,3 +14,9 @@ spec:
       image: front
       ports:
         - containerPort: 80
+    - name: db
+      image: db
+    - name: db-manager
+      image: db-manager
+      ports:
+        - containerPort: 8081
