@@ -6,6 +6,10 @@ build:
       context: ./back
     - image: front
       context: ./front
+    - image: db
+      context: ./db
+    - image: db-manager
+      context: ./db_manager
 deploy:
   kubectl:
     manifests:
